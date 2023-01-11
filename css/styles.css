@@ -271,6 +271,10 @@ section {
 }
 
 @media screen and (max-width: 396px) {
+  .mobile-menu-contact-link.active {
+    font-size: 20px;
+  }
+
   .mobile-social-list {
     gap: calc((100% - 56px) / 4);
   }
