@@ -237,7 +237,7 @@ section {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    /* white-space: nowrap; */
+
     color: #434455;
   }
 
@@ -269,6 +269,13 @@ section {
     transition: background-color var(--transition-dur-and-func);
   }
 }
+
+@media screen and (max-width: 396px) {
+  .mobile-social-list {
+    gap: calc((100% - 56px) / 4);
+  }
+}
+
 /* main mobile */
 
 .overlay {
@@ -344,7 +351,6 @@ section {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 57px;
-  outline: 2px solid red;
   letter-spacing: 0.02em;
   color: var(--color-main);
 
@@ -549,6 +555,12 @@ section {
 .customers-item {
   max-width: 190px;
   height: 88px;
+}
+
+@media screen and (max-width: 428px) {
+  .customers-item {
+    max-width: calc((100% - 16px) / 2);
+  }
 }
 
 .customers-list-item {
@@ -760,6 +772,12 @@ section {
   background-color: var(--color-item);
 
   margin-bottom: 16px;
+}
+
+@media screen and (max-width: 428px) {
+  .footer-form-input {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) {
