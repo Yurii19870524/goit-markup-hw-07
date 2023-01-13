@@ -58,6 +58,16 @@
             </li>
           </ul>
         </nav>
+        <button
+          type="button"
+          class="mobile-menu-open js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu-open_icon" width="32" height="22">
+            <use href="./images/icons.svg.svg#icon-burger-icon"></use>
+          </svg>
+        </button>
         <ul class="list contact-main">
           <li class="contact-item">
             <a class="contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -66,6 +76,69 @@
             <a class="contact-link link" href="tel:+11(000)1111111">+11 (000) 111-11-11</a>
           </li>
         </ul>
+      </div>
+      <!-- mobile menu -->
+      <div class="mobile-menu js-menu-container">
+        <div class="mobile-menu-container">
+          <button class="mobile-menu-close js-close-menu">
+            <svg class="mobile-menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <ul class="mobile-list list">
+            <li class="mobile-item">
+              <a class="mobile-link link" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-item">
+              <a class="mobile-link link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mobile-item">
+              <a class="mobile-link link active" href="">Contacts</a>
+            </li>
+          </ul>
+          <ul class="list mobile-menu-contact">
+            <li class="mobile-menu-contact-item">
+              <a class="mobile-menu-contact-link link active" href="tel:+11(000)1111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-menu-contact-item">
+              <a class="mobile-menu-contact-link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-social-list list">
+            <li class="mobile-social-list-item">
+              <a href="#" class="mobile-social-list-item-link">
+                <svg class="mobile-social-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-list-item">
+              <a href="#" class="mobile-social-list-item-link">
+                <svg class="mobile-social-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-list-item">
+              <a href="#" class="mobile-social-list-item-link">
+                <svg class="mobile-social-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-list-item">
+              <a href="#" class="mobile-social-list-item-link">
+                <svg class="mobile-social-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -86,12 +159,30 @@
               <a href="#" class="portfolio-card-list">
                 <div class="portfolio-img">
                   <picture>
-                    <source media="(min-width: )" srcset="" />
-                    <source media="(min-width: )" srcset="" />
-                    <source media="(min-width: )" srcset="" />
+                    <source
+                      media="(min-width:1158px )"
+                      srcset="
+                        ./images/desktop-gallery-portfolio/desktop-bank-app.jpg    1x,
+                        ./images/desktop-gallery-portfolio/desktop-bank-app@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/tablet-gallery-portfolio/tablet-bank-app.jpg    1x,
+                        ./images/tablet-gallery-portfolio/tablet-bank-app@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width:767px )"
+                      srcset="
+                        ./images/mobile-gallery-portfolio/img-bank-app.jpg    1x,
+                        ./images/mobile-gallery-portfolio/img-bank-app@2x.jpg 2x
+                      "
+                    />
                     <img
-                      src="./images/desktop-gallery-portfolio/desktop-bank-app.jpg"
-                      alt="photo-1"
+                      src="./images/mobile-gallery-portfolio/img-bank-app.jpg"
+                      alt="bank app"
                       width="360"
                       height="300"
                     />
@@ -113,12 +204,30 @@
               <a href="#" class="portfolio-card-list">
                 <div class="portfolio-img">
                   <picture>
-                    <source media="(min-width: )" srcset="" />
-                    <source media="(min-width: )" srcset="" />
-                    <source media="(min-width: )" srcset="" />
+                    <source
+                      media="(min-width:1158px )"
+                      srcset="
+                        ./images/desktop-gallery-portfolio/desktop-qr.jpg    1x,
+                        ./images/desktop-gallery-portfolio/desktop-qr@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/tablet-gallery-portfolio/tablet-qr.jpg    1x,
+                        ./images/tablet-gallery-portfolio/tablet-qr@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width:767px )"
+                      srcset="
+                        ./images/mobile-gallery-portfolio/img-qr.jpg    1x,
+                        ./images/mobile-gallery-portfolio/img-qr@2x.jpg 2x
+                      "
+                    />
                     <img
-                      src="./images/desktop-gallery-portfolio/desktop-qr.jpg"
-                      alt="photo-2"
+                      src="./images/mobile-gallery-portfolio/img-qr.jpg"
+                      alt="qr code"
                       width="360"
                       height="300"
                     />
@@ -140,12 +249,30 @@
               <a href="#" class="portfolio-card-list">
                 <div class="portfolio-img">
                   <picture>
-                    <source media="(min-width: )" srcset="" />
-                    <source media="(min-width: )" srcset="" />
-                    <source media="(min-width: )" srcset="" />
+                    <source
+                      media="(min-width:1158px )"
+                      srcset="
+                        ./images/desktop-gallery-portfolio/desktop-laptop.jpg    1x,
+                        ./images/desktop-gallery-portfolio/desktop-laptop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/tablet-gallery-portfolio/tablet-laptop.jpg    1x,
+                        ./images/tablet-gallery-portfolio/tablet-laptop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width:767px )"
+                      srcset="
+                        ./images/mobile-gallery-portfolio/img-laptop.jpg    1x,
+                        ./images/mobile-gallery-portfolio/img-laptop@2x.jpg 2x
+                      "
+                    />
                     <img
-                      src="./images/desktop-gallery-portfolio/desktop-laptop.jpg"
-                      alt="photo-3"
+                      src="./images/mobile-gallery-portfolio/img-laptop.jpg"
+                      alt="laptop"
                       width="360"
                       height="300"
                     />
@@ -166,11 +293,29 @@
               <a href="#" class="portfolio-card-list">
                 <div class="portfolio-img">
                   <picture>
-                    <source media="(min-width: )" srcset="" />
-                    <source media="(min-width: )" srcset="" />
-                    <source media="(min-width: )" srcset="" />
+                    <source
+                      media="(min-width:1158px )"
+                      srcset="
+                        ./images/desktop-gallery-portfolio/desktop-car.jpg    1x,
+                        ./images/desktop-gallery-portfolio/desktop-car@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/tablet-gallery-portfolio/tablet-car.jpg    1x,
+                        ./images/tablet-gallery-portfolio/tablet-car@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width:767px )"
+                      srcset="
+                        ./images/mobile-gallery-portfolio/img-car.jpg    1x,
+                        ./images/mobile-gallery-portfolio/img-car@2x.jpg 2x
+                      "
+                    />
                     <img
-                      src="./images/desktop-gallery-portfolio/desktop-car.jpg"
+                      src="./images/mobile-gallery-portfolio/img-car.jpg"
                       alt="car"
                       width="360"
                       height="300"
@@ -192,11 +337,29 @@
               <a href="#" class="portfolio-card-list">
                 <div class="portfolio-img">
                   <picture>
-                    <source media="(min-width: )" srcset="" />
-                    <source media="(min-width: )" srcset="" />
-                    <source media="(min-width: )" srcset="" />
+                    <source
+                      media="(min-width:1158px )"
+                      srcset="
+                        ./images/desktop-gallery-portfolio/desktop-phone.jpg    1x,
+                        ./images/desktop-gallery-portfolio/desktop-phone@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/tablet-gallery-portfolio/tablet-phone.jpg    1x,
+                        ./images/tablet-gallery-portfolio/tablet-phone@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width:767px )"
+                      srcset="
+                        ./images/mobile-gallery-portfolio/img-phone.jpg    1x,
+                        ./images/mobile-gallery-portfolio/img-phone@2x.jpg 2x
+                      "
+                    />
                     <img
-                      src="./images/desktop-gallery-portfolio/desktop-phone.jpg"
+                      src="./images/mobile-gallery-portfolio/img-phone.jpg"
                       alt="phone"
                       width="360"
                       height="300"
@@ -218,11 +381,29 @@
               <a href="#" class="portfolio-card-list">
                 <div class="portfolio-img">
                   <picture>
-                    <source media="(min-width: )" srcset="" />
-                    <source media="(min-width: )" srcset="" />
-                    <source media="(min-width: )" srcset="" />
+                    <source
+                      media="(min-width:1158px )"
+                      srcset="
+                        ./images/desktop-gallery-portfolio/desktop-dirl.jpg    1x,
+                        ./images/desktop-gallery-portfolio/desktop-dirl@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/tablet-gallery-portfolio/tablet-girl.jpg    1x,
+                        ./images/tablet-gallery-portfolio/tablet-girl@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width:767px )"
+                      srcset="
+                        ./images/mobile-gallery-portfolio/img-girl.jpg    1x,
+                        ./images/mobile-gallery-portfolio/img-girl@2x.jpg 2x
+                      "
+                    />
                     <img
-                      src="./images/desktop-gallery-portfolio/desktop-dirl.jpg"
+                      src="./images/mobile-gallery-portfolio/img-girl.jpg"
                       alt="girl"
                       width="360"
                       height="300"
@@ -244,11 +425,29 @@
               <a href="#" class="portfolio-card-list">
                 <div class="portfolio-img">
                   <picture>
-                    <source media="(min-width: )" srcset="" />
-                    <source media="(min-width: )" srcset="" />
-                    <source media="(min-width: )" srcset="" />
+                    <source
+                      media="(min-width:1158px )"
+                      srcset="
+                        ./images/desktop-gallery-portfolio/desktop-different.jpg    1x,
+                        ./images/desktop-gallery-portfolio/desktop-different@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/tablet-gallery-portfolio/tablet-different.jpg    1x,
+                        ./images/tablet-gallery-portfolio/tablet-different@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width:767px )"
+                      srcset="
+                        ./images/mobile-gallery-portfolio/img-different.jpg    1x,
+                        ./images/mobile-gallery-portfolio/img-different@2x.jpg 2x
+                      "
+                    />
                     <img
-                      src="./images/desktop-gallery-portfolio/desktop-different.jpg"
+                      src="./images/mobile-gallery-portfolio/img-different.jpg"
                       alt="different"
                       width="360"
                       height="300"
@@ -270,11 +469,29 @@
               <a href="#" class="portfolio-card-list">
                 <div class="portfolio-img">
                   <picture>
-                    <source media="(min-width: )" srcset="" />
-                    <source media="(min-width: )" srcset="" />
-                    <source media="(min-width: )" srcset="" />
+                    <source
+                      media="(min-width:1158px )"
+                      srcset="
+                        ./images/desktop-gallery-portfolio/desktop-bag.jpg    1x,
+                        ./images/desktop-gallery-portfolio/desktop-bag@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/tablet-gallery-portfolio/tablet-bag.jpg    1x,
+                        ./images/tablet-gallery-portfolio/tablet-bag@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width:767px )"
+                      srcset="
+                        ./images/mobile-gallery-portfolio/img-bag.jpg    1x,
+                        ./images/mobile-gallery-portfolio/img-bag@2x.jpg 2x
+                      "
+                    />
                     <img
-                      src="./images/desktop-gallery-portfolio/desktop-bag.jpg"
+                      src="./images/mobile-gallery-portfolio/img-bag.jpg"
                       alt="bag"
                       width="360"
                       height="300"
@@ -296,11 +513,29 @@
               <a href="" class="portfolio-card-list">
                 <div class="portfolio-img">
                   <picture>
-                    <source media="(min-width: )" srcset="" />
-                    <source media="(min-width: )" srcset="" />
-                    <source media="(min-width: )" srcset="" />
+                    <source
+                      media="(min-width:1158px )"
+                      srcset="
+                        ./images/desktop-gallery-portfolio/desktop-coffee.jpg    1x,
+                        ./images/desktop-gallery-portfolio/desktop-coffee@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px )"
+                      srcset="
+                        ./images/tablet-gallery-portfolio/tablet-coffee.jpg    1x,
+                        ./images/tablet-gallery-portfolio/tablet-coffee@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width:767px )"
+                      srcset="
+                        ./images/mobile-gallery-portfolio/img-coffee.jpg    1x,
+                        ./images/mobile-gallery-portfolio/img-coffee@2x.jpg 2x
+                      "
+                    />
                     <img
-                      src="./images/desktop-gallery-portfolio/desktop-coffee.jpg"
+                      src="./images/mobile-gallery-portfolio/img-coffee.jpg"
                       alt="coffee"
                       width="360"
                       height="300"
@@ -325,7 +560,7 @@
     <!--Footer-->
     <footer class="footer">
       <div class="container container-wrapper">
-        <div>
+        <div class="footer-container-logo">
           <h2 class="visually-hidden">Footer</h2>
           <a class="logo-box span link" href="/">
             <svg class="footer-icon-Web" width="44" height="22">
@@ -387,5 +622,6 @@
         </div>
       </div>
     </footer>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
