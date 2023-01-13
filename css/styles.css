@@ -1192,7 +1192,7 @@ section {
 }
 
 .portfolio-card {
-  /* display: inline-block; */
+  display: inline-block;
   background-color: var(--color-main);
   border-radius: 5px;
 
