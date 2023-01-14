@@ -62,8 +62,8 @@ address {
 }
 
 section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .visually-hidden {
@@ -409,11 +409,6 @@ section {
   }
 }
 
-.service {
-  padding-top: 96px;
-  padding-bottom: 96px;
-}
-
 .service-title {
   font-weight: 700;
   font-size: 36px;
@@ -460,11 +455,6 @@ section {
 }
 
 @media screen and (max-width: 767.98px) {
-  .section {
-    padding-top: 96px;
-    padding-bottom: 128px;
-  }
-
   .about-item:not(:last-child) {
     margin-bottom: 72px;
   }
@@ -957,11 +947,6 @@ section {
 /* tablet about */
 
 @media screen and (min-width: 768px) and (max-width: 1157.98px) {
-  .section {
-    padding-top: 96px;
-    padding-bottom: 104px;
-  }
-
   .about-list {
     display: flex;
     flex-wrap: wrap;
@@ -1007,6 +992,15 @@ section {
 
   .hero {
     padding-top: 188px;
+  }
+
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .gallery-section {
+    padding-top: 0;
   }
 }
 
