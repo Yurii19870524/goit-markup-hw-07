@@ -224,6 +224,7 @@ section {
   }
 
   .mobile-menu-contact-item:first-child {
+    white-space: nowrap;
     margin-bottom: 40px;
   }
 
@@ -274,15 +275,15 @@ section {
   .mobile-menu-contact-link.active {
     font-size: 25px;
   }
+
+  .mobile-social-list {
+    gap: calc((100% - 56px * 3) / 4);
+  }
 }
 
 @media screen and (max-width: 380px) {
   .mobile-menu-contact-link.active {
     font-size: 20px;
-  }
-
-  .mobile-social-list {
-    gap: calc((100% - 56px) / 4);
   }
 }
 
